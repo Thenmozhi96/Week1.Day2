@@ -5,6 +5,7 @@ public class PrintDuplicatesInArray {
 	{
 		int[] arr = {14,12,13,11,15,14,18,16,17,19,18,17,20};
 		//int len=arr.length;
+		
 		for(int i=0;i<arr.length;i++) 
 		{
 			int count=0;
@@ -15,8 +16,12 @@ public class PrintDuplicatesInArray {
 							count=count+1;
 						}
 					}
-					System.out.println(arr[i]+" having "+count); 
+		if(arr[0]==arr[i])
+		{
+			System.out.println(arr[i]+" having "+count);
 		}
+	}
+	
 	}
 
 }
